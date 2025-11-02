@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MotoX3M — Lesson 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html, body { height: 100%; margin: 0; }
+      body { display: grid; place-items: center; background: #e8f2ff; }
+      canvas { background: white; border: 1px solid #ccc; }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" width="1600" height="700"></canvas>
+    <button type="button" id="changeToBall">Ball</button>
+
+    <script>
+      document.getElementById('changeToBall').addEventListener('click', () => {
+        window.location.href = 'ball.html';
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
